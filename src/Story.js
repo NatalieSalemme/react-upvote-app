@@ -1,10 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+
 
 class Story extends React.Component {
   render() {
-    const { title, description, url, votes, author, authorAvatar, storyImage, onUpVote, onDownVote, id, tags} = this.props;
+    const { title, description, url, votes, author, authorAvatar, storyImage,
+      onUpVote, onDownVote, id, tags, componentPath} = this.props;
     const arrowUp = <FontAwesomeIcon icon={faArrowUp} size="lg" />
     const arrowDown = <FontAwesomeIcon icon={faArrowDown} size="lg" />
     const tagItem = tags.map(tag => <li className="tag">{tag}</li>);
@@ -33,12 +36,11 @@ class Story extends React.Component {
         />
       </div>
       <div>
-        <a className="title-link"
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer">
-        <h2 className="title">{title}</h2>
-        </a>
+        <Link
+          to={`/${componentPath}`}
+          className="title-link">
+          <h2 className="title">{title}</h2>
+        </Link>
         <p className="description">{description}</p>
         <ul className="tags">
           {tagItem}

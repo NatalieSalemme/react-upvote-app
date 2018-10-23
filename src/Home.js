@@ -60,6 +60,7 @@ class Home extends React.Component {
           storyImage={story.storyImage}
           onUpVote={this.handleStoryUpVote}
           onDownVote={this.handleStoryDownVote}
+          componentPath={story.componentPath}
           />
     ));
     return (
@@ -88,7 +89,8 @@ const stories = [
     tags: ['#MexicanCuisine', '#SweetTooth', '#PeanutButter'],
     authorAvatar: './images/michael.jpg',
     author: 'Michael Scott',
-    storyImage: './images/marzipan.png'
+    storyImage: './images/marzipan.png',
+    componentPath: 'marzipan'
   },
   {
     id: 2,
@@ -100,6 +102,7 @@ const stories = [
     authorAvatar: './images/jim.jpg',
     author: 'Jim Halpert',
     storyImage: './images/skinwars.jpg',
+    componentPath: 'skinwars'
   },
   {
     id: 3,
@@ -110,7 +113,8 @@ const stories = [
     tags: ['#CommonKnowledge', '#Education', '#H20'],
     authorAvatar: './images/pam.jpg',
     author: 'Pamela Beasley',
-    storyImage: './images/water.jpg'
+    storyImage: './images/water.jpg',
+    componentPath: 'water'
   },
   {
     id: 4,
@@ -121,6 +125,7 @@ const stories = [
     tags: ['#Santa', '#Christmas', '#RudolphLiedToAllOfUs'],
     authorAvatar: './images/kelly.jpg',
     author: 'Kelly Kapoor',
-    storyImage: './images/reindeer.jpg'
+    storyImage: './images/reindeer.jpg',
+    componentPath: 'santa'
   },
 ];
