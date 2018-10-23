@@ -45,7 +45,9 @@ class Story extends React.Component {
           {/* {tags.map(tag => <li className="tag">{tag}</li>)} */}
         </ul>
         <div className="author-container">
-          <p className="author">Posted by: {author}</p>
+          <p className="author-text">Posted by:
+            <span className="author"> {author}</span>
+          </p>
         <img className="author-avatar"
             src={require(`${authorAvatar}`)}
             alt={author} />

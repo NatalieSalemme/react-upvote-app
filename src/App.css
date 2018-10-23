@@ -28,9 +28,13 @@
 .title {
   margin-bottom: .7em;
 }
-.author {
+.author-text {
   margin: 1em .5em 0 0em;
   font-size: 13px;
+}
+.author:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .author-avatar {
   width: 35px;
