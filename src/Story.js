@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 class Story extends React.Component {
-
+  handleUpVote = () => {
+    this.props.onVote(this.props.id);
+  }
   render() {
-    const { title, description, url, votes, author, authorAvatar, storyImage, handleUpVote } = this.props;
+    const { title, description, url, votes, author, authorAvatar, storyImage} = this.props;
     const arrowUp = <FontAwesomeIcon icon={faArrowUp} size="lg" />
     const arrowDown = <FontAwesomeIcon icon={faArrowDown} size="lg" />
     return (
@@ -13,8 +15,9 @@ class Story extends React.Component {
         <div className="arrow-container">
           <p
             className="arrow-up-icon"
-            onClick={handleUpVote}
-            >{arrowUp}</p>
+            onClick={this.handleUpVote}>
+              {arrowUp}
+          </p>
           <p className="votes">{votes}</p>
           <p className="arrow-down-icon">{arrowDown}</p>
         </div>

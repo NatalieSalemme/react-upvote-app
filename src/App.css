@@ -26,16 +26,11 @@
   color: rgb(14, 86, 195);
 }
 .title {
-  border: 1px solid green;
   margin-bottom: .7em;
 
 }
-.description {
-  border: 1px solid red;
-}
 
 .author {
-  border: 1px solid blue;
   margin-top: 1em;
   font-size: 13px;
 }
@@ -43,7 +38,6 @@
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  border: 1px solid purple;
   margin: 0 1em 0 1.5em;
 }
 .arrow-container {

@@ -5,30 +5,39 @@ import Story from './Story';
 
 class App extends Component {
   state = {
-    stories: []
+    stories: [],
   };
-
-  handleUpVote = (storyId) => {
-    if(this.state.story.id) {
-      console.log('clicked me');
-    }
-  }
 
   componentDidMount() {
     this.setState({
       stories: stories
     });
-
   }
 
+  handleStoryUpVote = (storyId) => {
+    const updatedStories = this.state.stories.map((story) => {
+      if(story.id === storyId) {
+        return Object.assign({}, story, {
+          votes: story.votes + 1,
+        });
+      } else {
+        return story;
+      }
+    });
+    this.setState({
+      stories: updatedStories
+    });
+    console.log('updated stories', updatedStories);
+  }
+
+
   render() {
-    const sortedStories = stories.sort((a, b) => {
+    const stories = this.state.stories.sort((a, b) => {
       return b.votes - a.votes;
     });
-    console.log(sortedStories);
-    const storiesList = sortedStories.map((story) => (
+    const storiesList = stories.map((story) => (
         <Story
-          key={story.id}
+          key={story.title.toString()}
           id={story.id}
           title={story.title}
           description={story.description}
@@ -37,17 +46,14 @@ class App extends Component {
           author={story.author}
           authorAvatar={story.authorAvatar}
           storyImage={story.storyImage}
-          handleUpVote={this.handleUpVote}
+          onVote={this.handleStoryUpVote}
           />
     ));
 
     return (
       <div className="App">
-        {/* <img src={require('./water.jpg')} /> */}
-        {/* <img src={require('./images/skinwars.jpg')} /> */}
         <h1>Trending News</h1>
         {storiesList}
-
       </div>
     );
   }
@@ -65,7 +71,6 @@ const stories = [
     authorAvatar: '',
     author: 'Michael Scott',
     storyImage: './images/marzipan.png'
-    // /Users/nataliesalemme/desktop/trending-page/src/images/water.jpg
   },
   {
     id: 2,
