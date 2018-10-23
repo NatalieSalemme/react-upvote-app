@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
+import Home from './Home';
 import Story from './Story';
+import Marzipan from './Marzipan';
+import Water from './Water';
+import Santa from './Santa';
+import Skinwars from './Skinwars';
+
+import {
+  BrowserRouter,
+  Route
+} from 'react-router-dom';
+
+
+
 
 
 class App extends Component {
@@ -66,10 +79,17 @@ class App extends Component {
     ));
 
     return (
+      <BrowserRouter>
       <div className="App">
         <h1>Trending News</h1>
-        {storiesList}
+        {/* {storiesList} */}
+        <Route exact path="/" component={Home} />
+        <Route path="/marzipan" component={Marzipan} />
+        <Route path="/water" component={Water} />
+        <Route exact path="/santa" component={Santa} />
+        <Route path="/skinwars" component={Skinwars} />
       </div>
+    </BrowserRouter>
     );
   }
 }
