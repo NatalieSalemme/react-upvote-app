@@ -27,19 +27,23 @@ class Story extends React.Component {
           className="story-img"
           src={require(`${storyImage}`)}
           alt={title.split(' ').slice(0, 3).join(' ')}
-          rel="noopener noreferrer"
+
         />
       </div>
       <div>
-        <a className="title-link" href={url} target="_blank">
+        <a className="title-link"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer">
         <h2 className="title">{title}</h2>
         </a>
         <p className="description">{description}</p>
         <div className="author-container">
+          <p className="author">Posted by: {author}</p>
         <img className="author-avatar"
             src={require(`${authorAvatar}`)}
             alt={author} />
-        <p className="author">Posted by: {author}</p>
+
       </div>
       </div>
 

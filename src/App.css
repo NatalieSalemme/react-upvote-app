@@ -29,12 +29,12 @@
   margin-bottom: .7em;
 }
 .author {
-  margin: 1em 0 0 .5em;
+  margin: 1em .5em 0 0em;
   font-size: 13px;
 }
 .author-avatar {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 .story-img {
@@ -43,6 +43,7 @@
   border-radius: 10px;
   margin: 0 1em 0 1.5em;
   padding: .5em 0;
+  position: relative;
 }
 .arrow-container {
   margin-left: 1em;
@@ -65,4 +66,7 @@
 }
 .author-container {
   display: flex;
+}
+.votes {
+  position: absolute;
 }
