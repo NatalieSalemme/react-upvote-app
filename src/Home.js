@@ -65,7 +65,6 @@ class Home extends React.Component {
     ));
     return (
       <div>
-        <h3>home component</h3>
           {storiesList}
       </div>
     );
