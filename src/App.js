@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   render() {
+
     const storiesList = stories.map((story) => (
         <Story
           key={story.id}
@@ -31,11 +32,12 @@ class App extends Component {
 
           />
     ));
-
+    console.log(storiesList);
     return (
       <div className="App">
         <h1>Trending News</h1>
         {storiesList}
+
       </div>
     );
   }
@@ -53,6 +55,7 @@ const stories = [
     authorAvatar: '',
     author: 'Michael Scott',
     storyImage: ''
+    // /Users/nataliesalemme/desktop/trending-page/src/images/water.jpg
   },
   {
     id: 2,
