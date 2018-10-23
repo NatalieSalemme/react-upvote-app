@@ -4,7 +4,10 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 class Story extends React.Component {
   handleUpVote = () => {
-    this.props.onVote(this.props.id);
+    this.props.onUpVote(this.props.id);
+  }
+  handleDownVote = () => {
+    this.props.onDownVote(this.props.id);
   }
   render() {
     const { title, description, url, votes, author, authorAvatar, storyImage} = this.props;
@@ -19,7 +22,11 @@ class Story extends React.Component {
               {arrowUp}
           </p>
           <p className="votes">{votes}</p>
-          <p className="arrow-down-icon">{arrowDown}</p>
+          <p
+            className="arrow-down-icon"
+            onClick={this.handleDownVote}>
+            {arrowDown}
+          </p>
         </div>
         <div>
         <img

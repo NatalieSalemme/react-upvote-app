@@ -27,7 +27,20 @@ class App extends Component {
     this.setState({
       stories: updatedStories
     });
-    console.log('updated stories', updatedStories);
+  }
+  handleStoryDownVote = (storyId) => {
+    const updatedStories = this.state.stories.map((story) => {
+      if(story.id === storyId) {
+        return Object.assign({}, story, {
+          votes: story.votes - 1,
+        });
+      } else {
+        return story;
+      }
+    });
+    this.setState({
+      stories: updatedStories
+    });
   }
 
 
@@ -46,7 +59,8 @@ class App extends Component {
           author={story.author}
           authorAvatar={story.authorAvatar}
           storyImage={story.storyImage}
-          onVote={this.handleStoryUpVote}
+          onUpVote={this.handleStoryUpVote}
+          onDownVote={this.handleStoryDownVote}
           />
     ));
 
