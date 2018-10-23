@@ -25,8 +25,10 @@ class App extends Component {
           description={story.description}
           url={story.url}
           votes={story.votes}
+          author={story.author}
           authorAvatar={story.authorAvatar}
-          storyImage={story.image}
+          storyImage={story.storyImage}
+
           />
     ));
 
@@ -49,6 +51,7 @@ const stories = [
     url: 'https://www.mymexicancandy.com/mexican-candy/peanuts-cacahuates/de-la-rosa-mazapan-30-piece-pack-count/',
     votes: 22,
     authorAvatar: '',
+    author: 'Michael Scott',
     storyImage: ''
   },
   {
@@ -58,7 +61,8 @@ const stories = [
     url: 'https://en.wikipedia.org/wiki/Skin_Wars',
     votes: 39,
     authorAvatar: '',
-    storyImage: ''
+    author: 'Jim Halpert',
+    storyImage: '',
   },
   {
     id: 3,
@@ -67,6 +71,7 @@ const stories = [
     url: 'https://www.debate.org/opinions/is-water-wet',
     votes: 54,
     authorAvatar: '',
+    author: 'Pamela Beasley',
     storyImage: ''
   },
   {
@@ -76,6 +81,7 @@ const stories = [
     url: 'https://www.washingtonpost.com/lifestyle/style/officials-everywhere-are-now-perpetuating-the-santa-conspiracy-to-your-kids/2015/12/18/6836e0ac-a443-11e5-ad3f-991ce3374e23_story.html?noredirect=on&utm_term=.5a57b7ea8b67',
     votes: 18,
     authorAvatar: '',
+    author: 'Kelly Kapoor',
     storyImage: ''
   },
 ];
