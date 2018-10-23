@@ -9,6 +9,7 @@
 }
 .App h1 {
   margin-bottom: 1em;
+  font-size: 50px;
 }
 .story-container {
   border: 1px solid gray;
@@ -92,4 +93,16 @@
 .tag:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.bug-icon {
+  font-size: 80px;
+  color: rgb(209, 59, 68);
+}
+.not-found-num {
+  color: rgb(44, 26, 198);
+  font-size: 60px;
+}
+.not-found-text {
+  margin-top: .5em;
+  font-size: 35px;
 }
