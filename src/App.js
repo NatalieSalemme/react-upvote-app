@@ -8,6 +8,11 @@ class App extends Component {
     stories: []
   };
 
+  handleUpVote = (storyId) => {
+    if(this.state.story.id) {
+      console.log('clicked me');
+    }
+  }
 
   componentDidMount() {
     this.setState({
@@ -17,8 +22,11 @@ class App extends Component {
   }
 
   render() {
-
-    const storiesList = stories.map((story) => (
+    const sortedStories = stories.sort((a, b) => {
+      return b.votes - a.votes;
+    });
+    console.log(sortedStories);
+    const storiesList = sortedStories.map((story) => (
         <Story
           key={story.id}
           id={story.id}
@@ -29,6 +37,7 @@ class App extends Component {
           author={story.author}
           authorAvatar={story.authorAvatar}
           storyImage={story.storyImage}
+          handleUpVote={this.handleUpVote}
           />
     ));
 

@@ -33,9 +33,7 @@
 .description {
   border: 1px solid red;
 }
-.votes {
-  border: 1px solid orange;
-}
+
 .author {
   border: 1px solid blue;
   margin-top: 1em;
@@ -49,12 +47,21 @@
   margin: 0 1em 0 1.5em;
 }
 .arrow-container {
-  background-color: lightgray;
   margin-left: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.arrow-up-icon {
+.arrow-up-icon,
+.arrow-down-icon {
   text-align: center;
+  color: gray;
+}
+.arrow-up-icon:hover {
+  cursor: pointer;
+  color: rgb(204, 54, 54)
+}
+.arrow-down-icon:hover {
+  cursor: pointer;
+  color: rgb(28, 29, 161);
 }

@@ -5,13 +5,16 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 class Story extends React.Component {
 
   render() {
-    const { title, description, url, votes, author, authorAvatar, storyImage } = this.props;
+    const { title, description, url, votes, author, authorAvatar, storyImage, handleUpVote } = this.props;
     const arrowUp = <FontAwesomeIcon icon={faArrowUp} size="lg" />
     const arrowDown = <FontAwesomeIcon icon={faArrowDown} size="lg" />
     return (
       <div className="story-container">
         <div className="arrow-container">
-          <p className="arrow-up-icon">{arrowUp}</p>
+          <p
+            className="arrow-up-icon"
+            onClick={handleUpVote}
+            >{arrowUp}</p>
           <p className="votes">{votes}</p>
           <p className="arrow-down-icon">{arrowDown}</p>
         </div>
