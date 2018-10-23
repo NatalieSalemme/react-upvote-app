@@ -45,6 +45,10 @@
   padding: .5em 0;
   position: relative;
 }
+.story-img::selection,
+.votes::selection {
+  background-color: transparent;
+}
 .arrow-container {
   margin-left: 1em;
   display: flex;
