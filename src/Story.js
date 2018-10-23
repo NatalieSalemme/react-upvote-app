@@ -35,8 +35,12 @@ class Story extends React.Component {
         <h2 className="title">{title}</h2>
         </a>
         <p className="description">{description}</p>
-        <p className="author-avatar">{authorAvatar}</p>
+        <div className="author-container">
+        <img className="author-avatar"
+            src={require(`${authorAvatar}`)}
+            alt={author} />
         <p className="author">Posted by: {author}</p>
+      </div>
       </div>
 
       </div>

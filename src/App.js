@@ -82,7 +82,7 @@ const stories = [
     description: 'Popular Mexican candy breaks apart and does not crumble anymore',
     url: 'https://www.mymexicancandy.com/mexican-candy/peanuts-cacahuates/de-la-rosa-mazapan-30-piece-pack-count/',
     votes: 22,
-    authorAvatar: '',
+    authorAvatar: './images/michael.jpg',
     author: 'Michael Scott',
     storyImage: './images/marzipan.png'
   },
@@ -92,7 +92,7 @@ const stories = [
     description: 'The popularity of art is growing as a craving for puff pastries declines',
     url: 'https://en.wikipedia.org/wiki/Skin_Wars',
     votes: 39,
-    authorAvatar: '',
+    authorAvatar: './images/jim.jpg',
     author: 'Jim Halpert',
     storyImage: './images/skinwars.jpg',
   },
@@ -102,7 +102,7 @@ const stories = [
     description: 'If you do not know what is happening in this world, it is time to start learning',
     url: 'https://www.debate.org/opinions/is-water-wet',
     votes: 54,
-    authorAvatar: '',
+    authorAvatar: './images/pam.jpg',
     author: 'Pamela Beasley',
     storyImage: './images/water.jpg'
   },
@@ -112,7 +112,7 @@ const stories = [
     description: 'Everyone talks about seeing Santa Claus but there are 0 witnesses who have seen a reindeer',
     url: 'https://www.washingtonpost.com/lifestyle/style/officials-everywhere-are-now-perpetuating-the-santa-conspiracy-to-your-kids/2015/12/18/6836e0ac-a443-11e5-ad3f-991ce3374e23_story.html?noredirect=on&utm_term=.5a57b7ea8b67',
     votes: 18,
-    authorAvatar: '',
+    authorAvatar: './images/kelly.jpg',
     author: 'Kelly Kapoor',
     storyImage: './images/reindeer.jpg'
   },
