@@ -36,6 +36,7 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  margin-bottom: .3em;
 }
 .story-img {
   width: 100px;
@@ -73,4 +74,18 @@
 }
 .votes {
   position: absolute;
+}
+.tags {
+  font-weight: bold;
+  font-size: 11px;
+  margin: .8em;
+  display: flex;
+}
+.tag {
+  list-style-type: none;
+  margin-right: .3em;
+}
+.tag:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

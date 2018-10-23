@@ -4,9 +4,11 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 class Story extends React.Component {
   render() {
-    const { title, description, url, votes, author, authorAvatar, storyImage, onUpVote, onDownVote, id} = this.props;
+    const { title, description, url, votes, author, authorAvatar, storyImage, onUpVote, onDownVote, id, tags} = this.props;
     const arrowUp = <FontAwesomeIcon icon={faArrowUp} size="lg" />
     const arrowDown = <FontAwesomeIcon icon={faArrowDown} size="lg" />
+    const tagItem = tags.map(tag => <li className="tag">{tag}</li>);
+    console.log(tags);
     return (
       <div className="story-container">
         <div className="arrow-container">
@@ -38,6 +40,10 @@ class Story extends React.Component {
         <h2 className="title">{title}</h2>
         </a>
         <p className="description">{description}</p>
+        <ul className="tags">
+          {tagItem}
+          {/* {tags.map(tag => <li className="tag">{tag}</li>)} */}
+        </ul>
         <div className="author-container">
           <p className="author">Posted by: {author}</p>
         <img className="author-avatar"
