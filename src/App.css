@@ -1,12 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
-}
+  margin-top: 2em;
 
+}
+.App h1 {
+  margin-bottom: 1em;
+}
 .story-container {
-  border: 1px solid black;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.title-link {
+  text-decoration: none;
+  color:rgb(61, 156, 217);
+
+}
+.title-link:hover {
+  color: rgb(14, 86, 195);
+}
+.title {
+  border: 1px solid green;
+  margin-bottom: 1em;
+
+}
+.description {
+  border: 1px solid red;
+}
+.votes {
+  border: 1px solid orange;
+}
+.author {
+  border: 1px solid blue;
+  margin-top: 1em;
+  font-size: 13px;
 }
 .story-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
+  border: 1px solid purple;
+  margin: 0 1em 0 1.5em;
 }
