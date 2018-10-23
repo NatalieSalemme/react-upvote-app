@@ -29,12 +29,13 @@ class App extends Component {
           author={story.author}
           authorAvatar={story.authorAvatar}
           storyImage={story.storyImage}
-
           />
     ));
-    console.log(storiesList);
+
     return (
       <div className="App">
+        {/* <img src={require('./water.jpg')} /> */}
+        {/* <img src={require('./images/skinwars.jpg')} /> */}
         <h1>Trending News</h1>
         {storiesList}
 
@@ -54,7 +55,7 @@ const stories = [
     votes: 22,
     authorAvatar: '',
     author: 'Michael Scott',
-    storyImage: ''
+    storyImage: './images/marzipan.png'
     // /Users/nataliesalemme/desktop/trending-page/src/images/water.jpg
   },
   {
@@ -65,7 +66,7 @@ const stories = [
     votes: 39,
     authorAvatar: '',
     author: 'Jim Halpert',
-    storyImage: '',
+    storyImage: './images/skinwars.jpg',
   },
   {
     id: 3,
@@ -75,7 +76,7 @@ const stories = [
     votes: 54,
     authorAvatar: '',
     author: 'Pamela Beasley',
-    storyImage: ''
+    storyImage: './images/water.jpg'
   },
   {
     id: 4,
@@ -85,6 +86,6 @@ const stories = [
     votes: 18,
     authorAvatar: '',
     author: 'Kelly Kapoor',
-    storyImage: ''
+    storyImage: './images/reindeer.jpg'
   },
 ];

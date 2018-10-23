@@ -3,7 +3,6 @@ import React from 'react';
 class Story extends React.Component {
 
   render() {
-    console.log(this.props.storyImage)
     const { title, description, url, votes, author, authorAvatar, storyImage } = this.props;
     return (
       <div className="story-container">
@@ -14,7 +13,12 @@ class Story extends React.Component {
         <p className="votes">{votes}</p>
         <p className="author-avatar">{authorAvatar}</p>
         <p className="author">{author}</p>
-        <img className="story-img" src={storyImage} alt={title.split(' ').slice(0, 3).join(' ')} />
+        <img
+          className="story-img"
+          src={require(`${storyImage}`)}
+          alt={title.split(' ').slice(0, 3).join(' ')}
+          rel="noopener noreferrer"
+        />
 
       </div>
     );
