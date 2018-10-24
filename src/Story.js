@@ -48,8 +48,9 @@ class Story extends React.Component {
         </ul>
         <div className="author-container">
           <div className="author-text">
-            Posted by:
+            <span>Posted by:</span>
           <Link
+            className="author-link"
             to={author.split(' ').join('')}>
             <span className="author">{author}</span>
           </Link>
