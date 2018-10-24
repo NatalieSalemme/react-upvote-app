@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 class Story extends React.Component {
   render() {
-    const { title, description, url, votes, author, authorAvatar, storyImage,
+    const { title, description, votes, author, authorAvatar, storyImage,
       onUpVote, onDownVote, id, tags, componentPath} = this.props;
     const arrowUp = <FontAwesomeIcon icon={faArrowUp} size="lg" />
     const arrowDown = <FontAwesomeIcon icon={faArrowDown} size="lg" />

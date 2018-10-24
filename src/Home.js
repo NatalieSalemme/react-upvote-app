@@ -61,10 +61,12 @@ class Home extends React.Component {
           onUpVote={this.handleStoryUpVote}
           onDownVote={this.handleStoryDownVote}
           componentPath={story.componentPath}
+          length={stories.length}
           />
     ));
     return (
       <div>
+          <h3>Now showing the last {stories.length} stories</h3>
           {storiesList}
       </div>
     );

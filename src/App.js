@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Home';
-import Story from './Story';
 import Marzipan from './components/Marzipan';
 import Water from './components/Water';
 import Santa from './components/Santa';
