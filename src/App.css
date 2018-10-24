@@ -79,6 +79,7 @@ body {
 .votes::selection {
   background-color: transparent;
 }
+
 .arrow-container {
   margin-left: 1em;
   display: flex;
@@ -128,7 +129,8 @@ body {
   margin-top: .5em;
   font-size: 35px;
 }
-.bio-pic {
+.bio-pic,
+.story-page-img {
   height: 400px;
   width: 300px;
   margin: 1em 0;
