@@ -28,12 +28,13 @@ class Story extends React.Component {
           </p>
         </div>
         <div>
+        <Link to={`/${componentPath}`} >
         <img
           className="story-img"
           src={require(`${storyImage}`)}
-          alt={title.split(' ').slice(0, 3).join(' ')}
+          alt={title.split(' ').slice(0, 3).join(' ')} />
+        </Link>
 
-        />
       </div>
       <div>
         <Link
@@ -44,7 +45,6 @@ class Story extends React.Component {
         <p className="description">{description}</p>
         <ul className="tags">
           {tagItem}
-          {/* {tags.map(tag => <li className="tag">{tag}</li>)} */}
         </ul>
         <div className="author-container">
           <div className="author-text">
@@ -54,9 +54,12 @@ class Story extends React.Component {
             <span className="author">{author}</span>
           </Link>
         </div>
+        <Link
+          to={author.split(' ').join('')}>
         <img className="author-avatar"
             src={require(`${authorAvatar}`)}
             alt={author} />
+        </Link>
 
       </div>
       </div>

@@ -33,9 +33,17 @@
   margin: 1em .5em 0 0em;
   font-size: 13px;
 }
+.author-container {
+  display: flex;
+}
+.author {
+  color: black;
+  margin-left: .4em;
+}
 .author:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: red;
 }
 .author-avatar {
   width: 35px;
@@ -74,9 +82,7 @@
   cursor: pointer;
   color: rgb(28, 29, 161);
 }
-.author-container {
-  display: flex;
-}
+
 .votes {
   position: absolute;
 }
