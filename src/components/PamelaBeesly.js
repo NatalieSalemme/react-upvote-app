@@ -3,7 +3,12 @@ import React from 'react';
 const PamelaBeesly = () => {
   return (
     <div>
-      <p>Pamela Beesly is the receptionist at Dunder Miffline paper company in Scranton,
+      <h3>Pamela Beesly</h3>
+      <img
+        className='bio-pic'
+        src={require('../images/pam-beesly-bio.jpg')}
+        alt="Pam Beesly bio"/>
+      <p className="bio">Pamela Beesly is the receptionist at Dunder Miffline paper company in Scranton,
       PA. In her free time, she likes to draw art and hopes to one day attend an
     art school in New York City so that she can fulfill her passion. She frequently
   has art shows where her friends are able to come see her work. She is a very kind,

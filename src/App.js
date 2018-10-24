@@ -22,7 +22,9 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-        <h1>Trending News</h1>
+        <nav className="nav">
+        <h1 className="title">Trending News</h1>
+      </nav>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/marzipan" component={Marzipan} />

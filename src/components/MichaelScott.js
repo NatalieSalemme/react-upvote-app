@@ -3,7 +3,13 @@ import React from 'react';
 const MichaelScott = () => {
   return (
     <div>
-      <p>Michael Scott is the regional manager for a small paper company
+      <h3>Michael Scott</h3>
+      <img
+        className='bio-pic'
+        src={require('../images/michael-scott-bio.jpg')}
+        alt='Michael Scott bio'
+      />
+      <p className="bio">Michael Scott is the regional manager for a small paper company
       in Scranton, PA, and he absolutely loves his job. He considers himself
     "Worlds Best Boss" and he drinks from the mug with that quote each and
   every day. Michael has never worked anywhere else in his life and during

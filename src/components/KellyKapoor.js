@@ -3,7 +3,13 @@ import React from 'react';
 const KellyKapoor = () => {
   return (
     <div>
-      <p>Kelly Kapoor is a bubbly, outgoing woman who knows how to have fun. She is
+      <h3>Kelly Kapoor</h3>
+      <img
+        className='bio-pic'
+        src={require('../images/kelly-kapoor-bio.jpg')}
+        alt='Jim Halpert bio'
+      />
+      <p className="bio">Kelly Kapoor is a bubbly, outgoing woman who knows how to have fun. She is
       into celebrity gossip and pop news, so if you ever need to know what is happening
     in the A-List realm, Kelly is the person to go to. She knows alot of pop culture
   references and always seems to be the underdog during trivia nights out with friends.
