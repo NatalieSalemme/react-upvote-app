@@ -111,7 +111,7 @@ const stories = [
     votes: randomVote(),
     tags: ['#CommonKnowledge', '#Education', '#H20'],
     authorAvatar: './images/pam.jpg',
-    author: 'Pamela Beasley',
+    author: 'Pamela Beesly',
     storyImage: './images/water.jpg',
     componentPath: 'water'
   },

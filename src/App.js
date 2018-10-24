@@ -8,7 +8,7 @@ import Santa from './components/Santa';
 import Skinwars from './components/Skinwars';
 import NotFound from './NotFound';
 import MichaelScott from './components/MichaelScott';
-import PamelaBeasley from './components/PamelaBeasley';
+import PamelaBeesly from './components/PamelaBeesly';
 import KellyKapoor from './components/KellyKapoor';
 import JimHalpert from './components/JimHalpert';
 
@@ -31,7 +31,7 @@ class App extends Component {
         <Route exact path="/santa" component={Santa} />
         <Route path="/skinwars" component={Skinwars} />
         <Route path="/michaelscott" component={MichaelScott} />
-        <Route path="/pamelabeasley" component={PamelaBeasley} />
+        <Route path="/pamelabeesly" component={PamelaBeesly} />
         <Route path="/kellykapoor" component={KellyKapoor} />
         <Route path="/jimhalpert" component={JimHalpert} />
         <Route component={NotFound} />
