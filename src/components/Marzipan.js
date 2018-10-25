@@ -4,24 +4,20 @@ import { Link } from 'react-router-dom';
 const Marzipan = () => {
   return (
     <div>
-      {/* <div className="row"> */}
-
-        <div className="author-text">
-          <h5>Posted by:</h5>
+      <div className="row">
         <Link
           className="author-link"
-          to='/MichaelScott'>
+          to='/michaelscott'>
           <span className="author">Michael Scott</span>
         </Link>
-      </div>
-
-
-      {/* <h5>Written By: Michael Scott</h5>
+      <Link
+        to='/michaelscott'>
       <img
         className='author-avatar'
         src={require('../images/michael.jpg')}
         alt='Michael Scott' />
-      </div> */}
+      </Link>
+     </div>
 
 
 

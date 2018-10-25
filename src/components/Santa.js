@@ -1,8 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Santa = () => {
   return (
     <div>
+      <div className="row">
+        <Link
+          className="author-link"
+          to='/kellykapoor'>
+          <span className="author">Kelly Kapoor</span>
+        </Link>
+      <Link
+        to='/kellykapoor'>
+      <img
+        className='author-avatar'
+        src={require('../images/kelly.jpg')}
+        alt='Kelly Kapoor' />
+      </Link>
+     </div>
+
+
       <h3>Santa Claus conspiracy: Does he really have reindeer?</h3>
       <img
         className='story-page-img'

@@ -1,15 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Water = () => {
   return (
     <div>
+
       <div className="row">
-      <h2>Posted by: Pamela Beesly</h2>
+        <Link
+          className="author-link"
+          to='/pamelabeesly'>
+          <span className="author">Pamela Beesly</span>
+        </Link>
+      <Link
+        to='/pamelabeesly'>
       <img
+        className='author-avatar'
         src={require('../images/pam.jpg')}
-        alt="Pam Beesly avatar"
-        className="author-avatar"/>
-      </div>
+        alt='Pamela Beesly' />
+      </Link>
+     </div>
+
+
       <h3>Water is wet and other ridiculous things you should know by now.</h3>
       <img
         className="story-page-img"

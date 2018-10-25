@@ -14,7 +14,8 @@ import JimHalpert from './components/JimHalpert';
 import {
   BrowserRouter,
   Route,
-  Switch
+  Switch,
+  Link
 } from 'react-router-dom';
 
 class App extends Component {
@@ -23,7 +24,10 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <nav className="nav">
-        <h1 className="title">Trending News</h1>
+        <Link
+          to='/' >
+        <h1 className="main-title">Trending News</h1>
+      </Link>
       </nav>
       <Switch>
         <Route exact path="/" component={Home} />

@@ -1,8 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Skinwars = () => {
   return (
     <div>
+      <div className="row">
+        <Link
+          className="author-link"
+          to='/jimhalpert'>
+          <span className="author">Jim Halpert</span>
+        </Link>
+      <Link
+        to='/jimhalpert'>
+      <img
+        className='author-avatar'
+        src={require('../images/jim.jpg')}
+        alt='Jim Halpert' />
+      </Link>
+     </div>
+
+
       <h3>Skin Wars ratings to beat Great British Baking Show.</h3>
       <img
         className='story-page-img'
