@@ -6,8 +6,9 @@ const Santa = () => {
       <h3>Santa Claus conspiracy: Does he really have reindeer?</h3>
       <img
         className='story-page-img'
-        src={require('../images/reindeer-story.jpg')}/>
-      <p>Something that we can associate with christmas is good old St.Nicholas
+        src={require('../images/reindeer-story.jpg')}
+        alt='reindeer'/>
+      <p className="story-text">Something that we can associate with christmas is good old St.Nicholas
       himself, also known as the infamous Santa Claus. We have all heard the story
     of needing to put out cookies for Santa to eat while he is delivering gifts to children
   who have been good that year after he slides down the chimney. First of all, what

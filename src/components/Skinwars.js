@@ -6,8 +6,9 @@ const Skinwars = () => {
       <h3>Skin Wars ratings to beat Great British Baking Show.</h3>
       <img
         className='story-page-img'
-        src={require('../images/skinwars-story.jpg')} />
-      <p>Back by popular demand, Skin Wars on Netflix has now come out with it's 3rd
+        src={require('../images/skinwars-story.jpg')}
+        alt='Giraffe painted on legs'/>
+      <p className="story-text">Back by popular demand, Skin Wars on Netflix has now come out with it's 3rd
       season and the audience is more engaged than ever. The ratings on Skin Wars has
     now surpassed the ratings on the popular UK-based TV show: British Baking Show.
     The reason for this, is that many people have experience baking, but what the Great

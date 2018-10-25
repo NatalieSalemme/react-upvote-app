@@ -51,12 +51,12 @@ class Story extends React.Component {
             <span>Posted by:</span>
           <Link
             className="author-link"
-            to={author.split(' ').join('')}>
+            to={author.toLowerCase().split(' ').join('')}>
             <span className="author">{author}</span>
           </Link>
         </div>
         <Link
-          to={author.split(' ').join('')}>
+          to={author.toLowerCase().split(' ').join('')}>
         <img className="author-avatar"
             src={require(`${authorAvatar}`)}
             alt={author} />

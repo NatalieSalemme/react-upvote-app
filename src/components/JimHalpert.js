@@ -3,6 +3,7 @@ import React from 'react'
 const JimHalpert = () => {
   return (
     <div>
+
       <h3>Jim Halpert</h3>
       <img
         className='bio-pic'
